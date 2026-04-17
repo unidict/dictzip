@@ -20,8 +20,12 @@ typedef struct {
 int main(int argc, const char * argv[]) {
     // Build path relative to this source file
     const char *src_file = __FILE__;
-    const char *last_slash = strrchr(src_file, '/');
-    size_t dir_len = last_slash ? (size_t)(last_slash - src_file + 1) : 0;
+    size_t dir_len = 0;
+    for (const char *p = src_file; *p; p++) {
+        if (*p == '/' || *p == '\\') {
+            dir_len = (size_t)(p - src_file + 1);
+        }
+    }
 
     char default_path[512];
     snprintf(default_path, sizeof(default_path), "%.*sdata/eng-zho.dict.dz", (int)dir_len, src_file);
