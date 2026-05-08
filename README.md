@@ -1,5 +1,9 @@
 # libdictzip
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![C](https://img.shields.io/badge/C-11-blue.svg)](https://en.wikipedia.org/wiki/C11_(C_standard))
+[![CI](https://github.com/unidict/dictzip/actions/workflows/ci.yml/badge.svg)](https://github.com/unidict/dictzip/actions/workflows/ci.yml)
+
 A C library for reading dictzip (.dz) compressed files with random access support.
 
 ## Features
@@ -36,7 +40,7 @@ vcpkg install zlib:x64-windows
 ## Build
 
 ```bash
-git clone https://github.com/kejinlu/dictzip.git
+git clone https://github.com/unidict/dictzip.git
 cd dictzip
 cmake -B build
 cmake --build build
