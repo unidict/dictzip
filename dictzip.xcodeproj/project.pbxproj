@@ -38,7 +38,7 @@
 		692F1CCE2F907DEF0037745D /* libdictzip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdictzip.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		692F1CDA2F907F040037745D /* dictzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictzip.h; sourceTree = "<group>"; };
 		692F1CDB2F907F040037745D /* dictzip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dictzip.c; sourceTree = "<group>"; };
-		692F1CEE2F9123920037745D /* tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		692F1CEE2F9123920037745D /* dictzip-tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dictzip-tests"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				692F1CCE2F907DEF0037745D /* libdictzip.a */,
-				692F1CEE2F9123920037745D /* tests */,
+				692F1CEE2F9123920037745D /* dictzip-tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 			productReference = 692F1CCE2F907DEF0037745D /* libdictzip.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		692F1CED2F9123920037745D /* tests */ = {
+		692F1CED2F9123920037745D /* dictzip-tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 692F1CF22F9123920037745D /* Build configuration list for PBXNativeTarget "tests" */;
+			buildConfigurationList = 692F1CF22F9123920037745D /* Build configuration list for PBXNativeTarget "dictzip-tests" */;
 			buildPhases = (
 				692F1CEA2F9123920037745D /* Sources */,
 				692F1CEB2F9123920037745D /* Frameworks */,
@@ -152,11 +152,11 @@
 			fileSystemSynchronizedGroups = (
 				692F1CEF2F9123920037745D /* tests */,
 			);
-			name = tests;
+			name = "dictzip-tests";
 			packageProductDependencies = (
 			);
 			productName = tests;
-			productReference = 692F1CEE2F9123920037745D /* tests */;
+			productReference = 692F1CEE2F9123920037745D /* dictzip-tests */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +191,7 @@
 			projectRoot = "";
 			targets = (
 				692F1CCD2F907DEF0037745D /* dictzip */,
-				692F1CED2F9123920037745D /* tests */,
+				692F1CED2F9123920037745D /* dictzip-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		692F1CF22F9123920037745D /* Build configuration list for PBXNativeTarget "tests" */ = {
+		692F1CF22F9123920037745D /* Build configuration list for PBXNativeTarget "dictzip-tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				692F1CF32F9123920037745D /* Debug */,
